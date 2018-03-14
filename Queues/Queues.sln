@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queues", "Queues\Queues.csproj", "{D454E50B-0C96-41D2-9566-A359342E7CF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "additems", "additems\additems.csproj", "{8EC670C5-5E71-446A-9726-B76E02E17DA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "deleteitems", "deleteitem\deleteitems.csproj", "{A5E6FBE8-8E70-4701-B518-592E05907429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D454E50B-0C96-41D2-9566-A359342E7CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D454E50B-0C96-41D2-9566-A359342E7CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D454E50B-0C96-41D2-9566-A359342E7CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D454E50B-0C96-41D2-9566-A359342E7CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC670C5-5E71-446A-9726-B76E02E17DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC670C5-5E71-446A-9726-B76E02E17DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC670C5-5E71-446A-9726-B76E02E17DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC670C5-5E71-446A-9726-B76E02E17DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5E6FBE8-8E70-4701-B518-592E05907429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E6FBE8-8E70-4701-B518-592E05907429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E6FBE8-8E70-4701-B518-592E05907429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E6FBE8-8E70-4701-B518-592E05907429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0A71369-3854-4F83-81F4-218CCB2F44AA}
+	EndGlobalSection
+EndGlobal
