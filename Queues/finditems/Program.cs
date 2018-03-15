@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-namespace deleteitems
+namespace finditems
 {
     class Program
     {
@@ -19,11 +19,17 @@ namespace deleteitems
             {
                 q.Enqueue(i);
             }
-          
-            Console.WriteLine("Now the following letter will be removed from your name");
-            char ch = (char)q.Dequeue();
-            Console.WriteLine(ch);
-            
+
+            Console.WriteLine("Please enter a character to check if it in your name");
+            string charactor = Console.ReadLine();
+
+            foreach (var i in charactor) // true value == true only works for numbers
+            {
+                q.Contains(i);
+            }
+
+            Console.WriteLine(q.Contains(charactor));
+
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 
-namespace deleteitems
+namespace displayitems
 {
     class Program
     {
@@ -14,16 +14,18 @@ namespace deleteitems
             Queue q = new Queue();
             Console.WriteLine("Please enter a name to add");
             string name = Console.ReadLine();
+            string[] display = new string[20];
 
             foreach (char i in name)
             {
                 q.Enqueue(i);
             }
-          
-            Console.WriteLine("Now the following letter will be removed from your name");
-            char ch = (char)q.Dequeue();
-            Console.WriteLine(ch);
-            
+            foreach (char i in q)
+            {
+                q.ToArray(display);
+            }
+            Console.WriteLine(q.ToArray(display));
+        
         }
     }
 }
