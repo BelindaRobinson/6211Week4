@@ -4,36 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+
 namespace Queues
 {
     class Program
-    {               
-
-        static void Main(string[] args)       
+    {
+        
+        static void Main(string[] args)
         {
-            menu();                       
+            Queue q = new Queue();
+            menu(q);            
         }
 
-        static void menu()
+        static void menu(Queue q)
         {
             var menuchoice = '0';
             
             while (menuchoice == '0')
             {
-                Console.Write(new string('\n', 8));
                 Console.WriteLine("Please select a topic");
-                Console.WriteLine(new string('\n', 2));
                 Console.WriteLine("1. add items");
                 Console.WriteLine("2. delete items");
                 Console.WriteLine("3. display items");
                 Console.WriteLine("4. find items");
                 Console.WriteLine("5. show number of items");
+
                 menuchoice = Console.ReadKey(false).KeyChar;
 
                 switch (menuchoice)
                 {
                     case '1':
-                        additems();
+                        additems(q);
                         menuchoice = '0';
                         break;
 
@@ -61,9 +62,8 @@ namespace Queues
             }
         }
 
-        static void additems()
+        static void additems(Queue q)
         {
-            Queue q = new Queue();
             Console.WriteLine("Please enter a name to add");
             string name = Console.ReadLine();
 
