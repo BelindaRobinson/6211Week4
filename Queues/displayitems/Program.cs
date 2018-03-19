@@ -15,8 +15,8 @@ namespace displayitems
             Console.WriteLine("Please enter a name to add");
             string name = Console.ReadLine();
             string[] display = new string[20];
-
-            foreach (char i in name)
+            
+            foreach (char i in name)            
             {
                 q.Enqueue(i);
             }
