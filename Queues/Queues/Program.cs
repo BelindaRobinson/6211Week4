@@ -9,7 +9,7 @@ namespace Queues
 {
     class Program
     {
-        
+        static Queue q2 = new Queue();
         static void Main(string[] args)
         {
             Queue q = new Queue();
@@ -18,9 +18,9 @@ namespace Queues
 
         static void menu(Queue q)
         {
-            var menuchoice = '0';
+            string menuchoice = "0";
             
-            while (menuchoice == '0')
+            while (menuchoice == "0")
             {
                 Console.WriteLine("Please select a topic");
                 Console.WriteLine("1. add items");
@@ -29,33 +29,33 @@ namespace Queues
                 Console.WriteLine("4. find items");
                 Console.WriteLine("5. show number of items");
 
-                menuchoice = Console.ReadKey(false).KeyChar;
+                menuchoice = Console.ReadLine();
 
                 switch (menuchoice)
                 {
-                    case '1':
+                    case "1":
                         additems(q);
-                        menuchoice = '0';
+                        menuchoice = "0";
                         break;
 
-                    case '2':
-                        deleteitems();
-                        menuchoice = '0';
+                    case "2":
+                        deleteitems(q);
+                        menuchoice ="0";
                         break;
 
-                    case '3':
-                        displayitems();
-                        menuchoice = '0';
+                    case "3":
+                        displayitems(q);
+                        menuchoice = "0";
                         break;
 
-                    case '4':
-                        finditems();
-                        menuchoice = '0';
+                    case "4":
+                        finditems(q);
+                        menuchoice = "0";
                         break;
 
-                    case '5':
-                        shownumberitems();
-                        menuchoice = '0';
+                    case "5":
+                        shownumberitems(q);
+                        menuchoice = "0";
                         break;
                                             
                 }
@@ -77,9 +77,9 @@ namespace Queues
             }        
         }
 
-        static void deleteitems()
+        static void deleteitems(Queue q)
         {
-            Queue q = new Queue();
+           
             Console.WriteLine("Please enter a name to add");
             string name = Console.ReadLine();
 
@@ -93,9 +93,9 @@ namespace Queues
             Console.WriteLine(ch);
         }
 
-        static void displayitems()
+        static void displayitems(Queue q)
         {
-            Queue q = new Queue();
+            
             Console.WriteLine("Please enter a name to add");
             string name = Console.ReadLine();
             string[] display = new string[20];
@@ -104,16 +104,12 @@ namespace Queues
             {
                 q.Enqueue(i);
             }
-            foreach (char i in q)
-            {
-                //q.ToArray(display);
-            }
-            //Console.WriteLine(q.ToArray(display));
+            
         }
 
-        static void finditems()
+        static void finditems(Queue q)
         {
-            Queue q = new Queue();
+            
             Console.WriteLine("Please enter a name to add");
             string name = Console.ReadLine();
 
@@ -133,7 +129,7 @@ namespace Queues
             Console.WriteLine(q.Contains(charactor));
         }
 
-        static void shownumberitems()
+        static void shownumberitems(Queue q)
         {
 
         }
